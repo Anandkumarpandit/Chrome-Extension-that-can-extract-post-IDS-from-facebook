@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "fb-post-idX",
+    "version": "1.0.0",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://web.facebook.com/*", "*://www.facebook.com/*", "*://m.facebook.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
+
+

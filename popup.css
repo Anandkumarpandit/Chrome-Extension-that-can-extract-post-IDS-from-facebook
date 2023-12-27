@@ -1,0 +1,72 @@
+body{
+    width: 30rem;
+    height: 29rem;
+    }
+    .header {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    }
+    
+    .counter {
+    background-color:floralwhite;
+    }
+    
+    h1 {
+    font-size: 24px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    }
+    
+    .postIdList {
+    max-width: 400px;
+    margin: 0 auto;
+    }
+    
+    .list-container {
+    max-height: 350px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    }
+    
+    .uid {
+    counter-reset: my-counter;
+    list-style-type: none;
+    }
+    .uid li::before {
+    counter-increment: my-counter;
+    content: counter(my-counter) ". ";
+    }
+    
+    li {
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    }
+    
+    .save-button,
+    .clear-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    }
+    
+    .save-button:hover,
+    .clear-button:hover {
+    background-color: #45a049;
+    }
+    
+    .button-container {
+    text-align: right;
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    padding: 10px;
+    }
+    
